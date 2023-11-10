@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: serif, 'Times New Roman', Times, serif;
+  }
+  
+  .heading {
+    color: green;
+    text-align: center;
+  }
+  
+  /* Style all input fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  .checkbox {
+    display: inline-flex;
+    width: 33px;
+  }
+  
+  /* Style the submit button */
+  #submit {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  #submit:hover {
+    background-color: #45a046;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display: none;
+    background-color: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid::before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid::before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
