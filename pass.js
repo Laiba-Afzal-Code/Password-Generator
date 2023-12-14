@@ -6,10 +6,10 @@ let length = document.getElementById("length");
 
 function myFunction() {
   let x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
+  if (x.type === "text") {
     x.type = "password";
+  } else {
+    x.type = "text";
   }
 }
 
